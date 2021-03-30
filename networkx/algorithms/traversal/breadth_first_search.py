@@ -162,6 +162,7 @@ def bfs_edges(G, source, reverse=False, depth_limit=None, sort_neighbors=None):
     else:
         successors = G.neighbors
     yield from generic_bfs_edges(G, source, successors, depth_limit, sort_neighbors)
+    print('Considerating node:' + str(source))
 
 
 def bfs_tree(G, source, reverse=False, depth_limit=None, sort_neighbors=None):
